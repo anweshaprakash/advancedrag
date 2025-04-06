@@ -7,9 +7,9 @@ This project is a **Retrieval-Augmented Generation (RAG)** system that allows us
 ## 📌 Features
 
 - ✅ Upload and process any PDF file
-- ✅ Text chunking using `RecursiveCharacterTextSplitter`
+- ✅ Text chunking 
 - ✅ Dense vector indexing using FAISS
-- ✅ Embedding powered by OpenAI Embeddings (NOT SentenceTransformers)
+- ✅ Embedding powered by OpenAI Embeddings
 - ✅ Conversational QA using `ChatOpenAI`
 - ✅ Metadata retention including filename and page numbers
 - ✅ Streamlit caching for improved performance
@@ -24,7 +24,7 @@ This project is a **Retrieval-Augmented Generation (RAG)** system that allows us
 - **Embedding Model**: `OpenAIEmbeddings` from `langchain-openai`
 - **Vector Store**: FAISS
 - **Text Splitter**: RecursiveCharacterTextSplitter (LangChain)
-- **PDF Parsing**: PyMuPDF (`fitz`)
+- **PDF Parsing**: PyPDF2 (`fitz`)
 - **RAG Framework**: LangChain
 
 ---
