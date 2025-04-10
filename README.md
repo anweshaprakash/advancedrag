@@ -6,7 +6,7 @@ Developed by [@anweshaprakash](https://github.com/anweshaprakash) 💜
 
 ---
 
-![Demo UI](https://raw.githubusercontent.com/anweshaprakash/advancedrag/main/assets/demo.png)
+![Demo UI](https://www.loom.com/share/100de667e0794e35be1234f2efe05450?sid=2cec7e66-f0e2-4fbe-abeb-7cb27d201c2a)
 
 ## 🚀 Features
 
