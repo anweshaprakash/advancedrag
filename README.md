@@ -69,7 +69,7 @@ streamlit run app.py
 
 | Upload PDF | Ask Questions | Evaluation |
 |------------|----------------|------------|
-| ![upload](https://raw.githubusercontent.com/anweshaprakash/advancedrag/main/assets/upload.png) | ![chat](https://raw.githubusercontent.com/anweshaprakash/advancedrag/main/assets/chat.png) | ![metrics](https://raw.githubusercontent.com/anweshaprakash/advancedrag/main/assets/metrics.png) |
+| ![upload](assets/upload.png) | ![chat](assets/chat.png) | ![metrics](assets/metrics.png) |
 
 ---
 
