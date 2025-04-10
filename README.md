@@ -6,7 +6,10 @@ Developed by [@anweshaprakash](https://github.com/anweshaprakash) 💜
 
 ---
 
-![Demo UI](https://www.loom.com/share/100de667e0794e35be1234f2efe05450?sid=2cec7e66-f0e2-4fbe-abeb-7cb27d201c2a)
+### 📽️ Demo Video
+
+Check out the demo on Loom:  
+👉 [Watch Demo on Loom](https://www.loom.com/share/100de667e0794e35be1234f2efe05450?sid=2e2d67d9-a0ae-4efa-a228-9f6002248824)
 
 ## 🚀 Features
 
