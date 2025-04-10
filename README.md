@@ -1,38 +1,99 @@
-# 🧠 Advanced RAG System using Streamlit + LangChain + OpenAI Embeddings
+# 🧠 AdvancedRAG: Chat with Your PDF using RAG + FlagEmbedding + RAGAS
 
-This project is a **Retrieval-Augmented Generation (RAG)** system that allows users to upload PDFs, automatically extract information, index it using OpenAI Embeddings and FAISS, and query it using OpenAI’s GPT models — all from a simple **Streamlit interface**.
+Welcome to **AdvancedRAG**, a Streamlit-based interactive app that lets you upload a PDF, ask questions about it, and receive context-aware, AI-generated answers—**backed by FAISS dense retrieval**, **FlagEmbedding reranking**, and **RAGAS-based evaluation**.
 
----
-
-## 📌 Features
-
-- ✅ Upload and process any PDF file
-- ✅ Text chunking
-- ✅ Dense vector indexing using FAISS
-- ✅ Embedding powered by OpenAI Embeddings
-- ✅ Conversational QA using `ChatOpenAI`
-- ✅ Metadata retention including filename and page numbers
-- ✅ Streamlit caching for improved performance
-- ✅ Supports OpenAI API v1.0+
+Developed by [@anweshaprakash](https://github.com/anweshaprakash) 💜
 
 ---
 
-## 🧱 Tech Stack
+![Demo UI](https://raw.githubusercontent.com/anweshaprakash/advancedrag/main/assets/demo.png)
 
-- **Frontend**: Streamlit
-- **LLM**: OpenAI `gpt-3.5-turbo` or `gpt-4`
-- **Embedding Model**: `OpenAIEmbeddings` from `langchain-openai`
-- **Vector Store**: FAISS
-- **Text Splitter**: RecursiveCharacterTextSplitter (LangChain)
-- **PDF Parsing**: PyPDF2
-- **RAG Framework**: LangChain
+## 🚀 Features
+
+- 📄 Upload **any PDF file**
+- 🔍 Text is **split into chunks** with metadata
+- 🔗 Dense semantic search with **FAISS**
+- 🎯 Reranked using **FlagEmbedding** (BAAI/bge-reranker-large)
+- 🤖 Answer generated using **GPT-3.5 / GPT-4o**
+- 🧪 Evaluated using **RAGAS metrics**: Faithfulness & Relevance
+- 🧼 Clean **Streamlit UI** with caching & chat history
 
 ---
 
-## 📂 Folder Structure
+## 📦 Project Structure
+
+```
+advancedrag/
+├── app.py               # Streamlit app
+├── requirements.txt     # Python dependencies
+└── assets/
+    └── demo.png         # App UI screenshot
+```
+
+---
+
+## 🛠️ Installation
+
+### 1. Clone the Repo
 
 ```bash
-.
-├── advancedRAG.py            # Main Streamlit app
-├── requirements.txt          # Python dependencies
-├── README.md                 # You're reading it!
+git clone https://github.com/anweshaprakash/advancedrag.git
+cd advancedrag
+```
+
+### 2. Install Requirements
+
+```bash
+pip install -r requirements.txt
+```
+
+> ⚠️ Don't forget to install `faiss-cpu` or `faiss-gpu` based on your environment!
+
+### 3. Set Environment Variables
+
+Create a `.env` file and add your OpenAI key:
+
+```
+OPENAI_API_KEY=sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxx
+```
+
+### 4. Run the App
+
+```bash
+streamlit run app.py
+```
+
+---
+
+## 📸 Screenshots
+
+| Upload PDF | Ask Questions | Evaluation |
+|------------|----------------|------------|
+| ![upload](https://raw.githubusercontent.com/anweshaprakash/advancedrag/main/assets/upload.png) | ![chat](https://raw.githubusercontent.com/anweshaprakash/advancedrag/main/assets/chat.png) | ![metrics](https://raw.githubusercontent.com/anweshaprakash/advancedrag/main/assets/metrics.png) |
+
+---
+
+## 🧠 Tech Stack
+
+- [Streamlit](https://streamlit.io/)
+- [FAISS](https://github.com/facebookresearch/faiss)
+- [FlagEmbedding](https://huggingface.co/BAAI/bge-reranker-large)
+- [LangChain](https://www.langchain.com/)
+- [OpenAI](https://platform.openai.com/)
+- [RAGAS](https://github.com/explodinggradients/ragas)
+- [PyPDF2](https://pypi.org/project/PyPDF2/)
+
+---
+
+## ✅ TODOs
+
+- [ ] Multi-document support
+- [ ] GPT-4 fine-tuning
+- [ ] PDF preview in UI
+- [ ] Save chat history
+
+---
+
+## 📄 License
+
+MIT License © [Anwesha Prakash](https://github.com/anweshaprakash)
